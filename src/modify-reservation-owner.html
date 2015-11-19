@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <title>Modify/Cancel Reservation</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,27 +18,24 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
-
 </head>
 <body>
 
 <div class="main-header">
     Welcome to the Restaurant!
 </div>
-
-<!--<div class="container">  -->
 <header>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
 
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class=" navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
                     <li><a href="#">Menu</a></li>
                     <li><a href="#">Order Online</a></li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reservation<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="make-reservation-owner.html">Make a Reservation</a></li>
@@ -51,7 +48,7 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <b> Hello, Owner!</b>
+                    <b>Hello, Owner!</b>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings<span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -66,6 +63,34 @@
         </div><!-- /.container-fluid -->
     </nav>
 </header>
+<div class="container">
+
+    <div class="container well">
+
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                Confirmation Code:  <input type="number" name="quantity" class="form-control">
+                <br><br>
+
+                First name: <input type="text" name="firstname" class="form-control">
+                <br> <br>
+                Last name:  <input type="text" name="lastname" class="form-control">
+                <br> <br>
+                Date:       <input type="date" name="reserve_date" class="form-control">
+                <br> <br>
+                Time:       <input type="time" name="reserve_time" class="form-control">
+                <br><br>
+                Party Size: <input type="number" name="quantity" class="form-control">
+                <br><br>
+                <button type="button" class="btn btn-default navbar-btn">Update Reservation</button>
+                <button type="button" class="btn btn-default navbar-btn">Cancel Reservation</button>
+                <br><br>
+            </div>
+
+        </form>
+
+    </div>
+</div>
 
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
@@ -83,3 +108,4 @@
 <script src="assets/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
+

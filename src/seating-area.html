@@ -35,7 +35,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
                     <li><a href="#">Menu</a></li>
                     <li><a href="#">Order Online</a></li>
                     <li class="dropdown">
@@ -47,7 +47,7 @@
                             <li><a href="view-reservations.html">View Reservation listing</a></li>
                         </ul>
                     </li>
-                    <li><a href="seating-area.html">View Seating Area</a></li>
+                    <li class="active"><a href="seating-area.html">View Seating Area</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -66,7 +66,45 @@
         </div><!-- /.container-fluid -->
     </nav>
 </header>
-
+<div class="container-fluid well">
+    <div class="table-responsive">
+        <table class="table">
+            <caption><b>Seating Area</b></caption>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Confirmation Code</th>
+                <th>Size</th>
+                <th>Status</th>
+                <th>Since</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td><a href="modify-reservation-owner.html?id=C0934512890">C0934512890</a> </td>
+                <td>5</td>
+                <td>Waiting</td>
+                <td>2015-11-18</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><a href="modify-reservation-owner.html?id=C0934512889">C0934512889</a> </td>
+                <td>4</td>
+                <td>Confirmed</td>
+                <td>2015-11-17</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td><a href="modify-reservation-owner.html?id=C0934512888">C0934512888</a> </td>
+                <td>2</td>
+                <td>Confirmed</td>
+                <td>2015-11-17</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 

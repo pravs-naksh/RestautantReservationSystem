@@ -35,7 +35,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
                     <li><a href="#">Menu</a></li>
                     <li><a href="#">Order Online</a></li>
                     <li class="dropdown">
@@ -52,7 +52,7 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <b> Hello, Owner!</b>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="res-profile.html">Edit Restaurant Details</a></li>
@@ -66,7 +66,26 @@
         </div><!-- /.container-fluid -->
     </nav>
 </header>
+<div class="container-fluid well">
+    <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            Restaurant name: <input type="text" name="restaurant_name" class="form-control">
+            <br> <br>
+            Contact Name: <input type="text" name="contactname" class="form-control">
+            <br> <br>
+            Email: <input type="email" name="reserve_date" class="form-control">
+            <br> <br>
+            Address: <textarea name="address" rows="4" class="form-control" cols="100"></textarea>
+            <br> <br>
+            Auto Assign: <input type="checkbox"  name="auto_assign" />
+            <br><br>
+            Hours: <input type="text" class="form-control"  name="hours" />
+            <br><br>
+            <button type="button" class="btn btn-default navbar-btn">Update</button>
+        </div>
 
+    </form>
+</div>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 
