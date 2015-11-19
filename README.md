@@ -2,7 +2,7 @@
     Egen Solutions Project
 ## Requirements:
 
-Owner | View Reservation:
+Owner | View Reservation: <br/>
 Owner can view list of reservations.
 Click on each reservation item for more details.
 Owner | View Seating Area
